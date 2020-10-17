@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of modelc is to ...
+The goal of modelc is to resample data.frame
 
 ## Installation
 
