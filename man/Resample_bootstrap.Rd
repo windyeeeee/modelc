@@ -10,19 +10,15 @@ Resample_bootstrap(data)
 \item{data}{The \code{data} should be a data.frame}
 }
 \value{
-
+resample
 }
 \description{
 \code{Resample_bootstrap()} bootstrap the subset for a data.frame, using resample modal
 class. Rows are sampled for data.
 }
 \examples{
-b <- resample_bootstrap(mtcars)
-b
-as.integer(b)
-as.data.frame(b)
-lm(mpg ~ wt, data = b)
+b <- Resample_bootstrap(mtcars)
 }
 \seealso{
-Other resampling techniques:\code{\link[=resample(), resample_partition]{resample(), resample_partition()}}
+Other resampling techniques:\code{\link[=Resample(), Resample_partition]{Resample(), Resample_partition()}}
 }

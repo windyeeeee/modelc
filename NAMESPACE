@@ -3,3 +3,4 @@
 export(Resample)
 export(Resample_bootstrap)
 export(Resample_partition)
+import(purrr)

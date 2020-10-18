@@ -12,14 +12,14 @@ Resample_partition(data, p)
 \item{p}{The \code{p} represent partition}
 }
 \value{
-
+resample
 }
 \description{
 \code{Resample_partition()} A data.frame were splited test and train subset data
 }
 \examples{
-ex <- resample_partition(mtcars, c(test = 0.3, train = 0.7))
+ex <- Resample_partition(mtcars, c(test = 0.3, train = 0.7))
 }
 \seealso{
-Other resampling techniques:\code{\link[=resample(), resample_partition]{resample(), resample_partition()}}
+Other resampling techniques:\code{\link[=Resample(), Resample_partition]{Resample(), Resample_partition()}}
 }

@@ -19,11 +19,11 @@ vlaue as resample objects
 class. Rows are typically choosed for data.
 }
 \examples{
-resample(mtcars, 1:10)
+Resample(mtcars, 1:10)
 }
 \references{
 modelr
 }
 \seealso{
-Other resampling techniques:\code{\link[=resample_bootstrap(), resample_partition]{resample_bootstrap(), resample_partition()}}
+Other resampling techniques:\code{\link[=Resample_bootstrap(), Resample_partition]{Resample_bootstrap(), Resample_partition()}}
 }

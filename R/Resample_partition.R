@@ -4,14 +4,17 @@
 #' @description
 #' `Resample_partition()` A data.frame were splited test and train subset data
 #' @seealso
-#' Other resampling techniques:[resample(), resample_partition()]
+#' Other resampling techniques:[Resample(), Resample_partition()]
 #' @return
+#' resample
 #' @export
+#' @import
+#' purrr
 #' @examples
-#' ex <- resample_partition(mtcars, c(test = 0.3, train = 0.7))
+#' ex <- Resample_partition(mtcars, c(test = 0.3, train = 0.7))
 Resample_partition<-function (data, p)
   {
-    if (!is.numeric(p) || length(p) < 2 || !all(has_name(p))) {
+    if (!is.numeric(p) || length(p) < 2) {
       stop("`p` must be a named numeric vector with at least two values.")
     }
     if (abs(sum(p) - 1) > 1e-06) {
@@ -22,5 +25,5 @@ Resample_partition<-function (data, p)
     g <- findInterval(seq_len(n)/n, c(0, cumsum(p)), rightmost.closed = TRUE)
     idx <- split(seq_len(n), sample(g))
     names(idx) <- names(p)
-    map(idx, resample, data = data)
+    map(idx, Resample, data = data)
   }

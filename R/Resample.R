@@ -10,11 +10,11 @@
 #' @references
 #' modelr
 #' @seealso
-#' Other resampling techniques:[resample_bootstrap(), resample_partition()]
+#' Other resampling techniques:[Resample_bootstrap(), Resample_partition()]
 #'
 #' @export
 #' @examples
-#' resample(mtcars, 1:10)
+#' Resample(mtcars, 1:10)
 Resample<-function (data, idx) {
     if (!is.data.frame(data)) {
       stop("`data` must be a data frame.", call. = FALSE)
